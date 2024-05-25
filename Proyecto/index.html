@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Reconocedor de rostros</title>
+</head>
+
+<body>
+    <header>
+        <h1>Clasificador de rostros</h1>
+    </header>
+    <section id="sect-Lista">
+        <h2>Personas:</h2>
+        <details>
+            <summary>Alexa Perez</summary>
+            <article>
+                <img src="img/imgAlexa.jpg" alt="">
+                <p>Alexa Perez<br><span>...</span></p>
+            </article>
+        </details>
+        <details>
+            <summary>Bryan</summary>
+            <article>
+                <img src="img/imgBryan.jpg" alt="">
+                <p>Bryan<br><span>...</span></p>
+            </article>
+        </details>
+        <details>
+            <summary>Bill Gates</summary>
+            <article>
+                <img src="img/imgBill.jpg" alt="">
+                <p>Bill Gates<br><span>Cofundador de Microsoft</span></p>
+            </article>
+        </details>
+        <details>
+            <summary>Elon Musk</summary>
+            <article>
+                <img src="img/imgElon.jpg" alt="">
+                <p>Elon Musk<br><span>Cofundador de SpaceX</span></p>
+            </article>
+        </details>
+        <details>
+            <summary>Jeff Bezos</summary>
+            <article>
+                <img src="img/imgJeff.jpeg" alt="">
+                <p>Jeff Bezos<br><span>Fundador de Amazon</span></p>
+            </article>
+        </details>
+        <details>
+            <summary>Mark Zuckerberg</summary>
+            <article>
+                <img src="img/imgMark.png" alt="">
+                <p>Mark Zuckerberg<br><span>Creador de Facebook</span></p>
+            </article>
+        </details>
+        <details>
+            <summary>Steve Jobs</summary>
+            <article>
+                <img src="img/imgSteve.jpg" alt="">
+                <p>Steve Jobs<br><span>Cofundador de Apple</span></p>
+            </article>
+        </details>
+    </section>
+    <main>
+        <button class="bg-Azul" id="cambiar-camara" onclick="cambiarCamara();">Cambiar
+            Cámara</button>
+        <br>
+        <video id="video" playsinline autoplay></video>
+        <br>
+        <button class="bg-Rojo" id="tomar-foto" onclick="tomarFoto();">Tomar Foto</button>
+    </main>
+    <section id="sect-Resultados">
+        <article>
+            <img id="card-image" src="" alt="Imagen de prediccion">
+        </article>
+        <article>
+            <p>Persona:</p>
+            <span id="card-text"></span>
+        </article>
+    </section>
+    <div id="div-Resultado">
+        <canvas id="canvas"></canvas>
+        <div id="resultado"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+/*Hoja de estilos de la app*/
+
+body {
+    background-color: #F0ECE5;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+#sect-Lista article img {
+    border-radius: 100px;
+    height: 80px;
+    width: 80px;
+}
+
+#sect-Lista article {
+    display: flex;
+    align-items: center;
+    border: 2px solid silver;
+    border-radius: 10px;
+    margin: 4px 0 4px 0;
+    padding: 2px;
+}
+
+#sect-Lista article p {
+    font-size: 1.3em;
+    margin-left: 20px;
+}
+
+#sect-Lista article p span {
+    color: gray;
+    font-size: 16px;
+}
+
+#sect-Lista details {
+    color: gray;
+    font-size: 16px;
+}
+
+main {
+    margin-top: 20px;
+    text-align: center;
+}
+
+main button {
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 50px;
+    margin: 20px 0 20px 0;
+}
+
+video {
+    height: 200px;
+    width: 250px;
+}
+
+canvas {
+    display: none;
+}
+
+.bg-Azul {
+    background-color: #007bff;
+}
+
+.bg-Rojo {
+    background-color: #dc3545;
+}
+
+#sect-Resultados {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#sect-Resultados article p {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#sect-Resultados article span {
+    color: gray;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#div-Resultados {
+    display: none;
+}
